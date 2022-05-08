@@ -12,6 +12,7 @@ def checkRequestData(clientData) -> dict:
 def validateData(data) -> None:
     try:
         initialCode = data["initialCode"]
+
         n = data["n"]
     except Exception as e:
         raise TypeError(f"Faltando propriedade {e}")
