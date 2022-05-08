@@ -12,6 +12,7 @@ def user():
         keyRequest = request.json
 
         key = checkRequestData(keyRequest)
+
         return make_response(jsonify(key), 201)
     except Exception as e:
         error = errorWriter(400, str(e))
